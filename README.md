@@ -1,4 +1,4 @@
-# blood-volume-calculator
+# Blood Volume Calculator
 Blood volume calculator API created using Spring boot. 
 The formula was obtained from nadler's formula for calculating blood volume.
 
