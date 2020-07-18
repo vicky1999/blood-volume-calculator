@@ -1,5 +1,5 @@
 # Blood Volume Calculator
-Blood volume calculator API was created using Spring boot. 
+Blood volume calculator ia an API created using Spring boot. 
 The formula was obtained from nadler's formula for calculating blood volume.
 
 # Request Format
