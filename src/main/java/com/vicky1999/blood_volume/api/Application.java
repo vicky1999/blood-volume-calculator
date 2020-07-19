@@ -9,6 +9,26 @@ import java.util.Map;
 
 @RestController
 public class Application extends Data {
+    @PostMapping("/bmi")
+    public Map<Object,Object> getBMI(@RequestBody Data data) {
+        double height=data.getHeight();
+        double weight=data.getWeight();
+        height=height/100;
+        Double bmi=weight/(height*height);
+        String res;
+        if(bmi<=18.5) res="Underweight";
+        else if(bmi>18.5 && bmi <= 25) res="Normal";
+        else if(bmi >25 && bmi <=30) res="Overweight";
+        else res="Obese";
+        Map<Object,Object> response = new HashMap<>();
+        response.put("response",HttpStatus.OK);
+        response.put("height",height);
+        response.put("weight",weight);
+        response.put("bmi",bmi);
+        response.put("result",res);
+        return response;
+    }
+
 
     @PostMapping("/bvc")
     public Map<Object,Object> getBV(@RequestBody Data data) {
