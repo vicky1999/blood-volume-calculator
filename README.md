@@ -5,8 +5,8 @@ The formula was obtained from nadler's formula for calculating blood volume.
 # Request Format for Body Mass Index 
 
 { <br/>
-  "height":height in CM, <br/>
-  "weight": weight in KG <br/>
+      "height":height in CM, <br/>
+      "weight": weight in KG <br/>
 }
 <br/>
 # Response Format for Body Mass Index
